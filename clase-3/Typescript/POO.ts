@@ -34,7 +34,7 @@ class Recepcion{
 
 //instancia de una clase 
 
- //const recepcionistaA= new Recepcion();
+ const recepcionistaA= new Recepcion();
 
 
 //this
