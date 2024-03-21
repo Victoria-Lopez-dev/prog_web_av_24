@@ -57,6 +57,10 @@ const listaEspera:PacienteAnimal[]=[];//definimos que permita solo tipo de dato 
 
 const historial:PacienteAnimal[]=[];
 
+const cosasACobrar:string[]=[];
+
+//moldes de la Recepcion y Veterinaria
+
 //superClase del personal de la veterinaria aprovechando que todos tienen las mismas propiedades 
 class PersonalVete{
     //atributos
@@ -95,8 +99,22 @@ class Recepcion extends PersonalVete{
         historial.push(paciente)
 
     }
-    // # Cobrar la consulta (la cual es de $1000) y en caso de ser necesario, algún medicamento( el cual sale $800 c/u).
 
+    cobrar(cosasACobrar:string[]){
+        // # Cobrar la consulta (la cual es de $1000) y en caso de ser necesario, algún medicamento( el cual sale $800 c/u).
+
+        let montoTotal:number=0;
+        for (let item of cosasACobrar) {
+
+            if(item === "consulta"){
+                montoTotal=montoTotal+ 1000
+            }else if(item === "medicamento"){
+                montoTotal=montoTotal+ 800
+            }
+            
+        }
+        return  montoTotal
+    }
 }
 
 //subclase de PersonalVete
@@ -106,10 +124,96 @@ class Veterinaria extends PersonalVete{
 
     //metodos:
 
-    // # Sacar los pacientes de la lista de espera
-    // # Agregar información al objeto del paciente
-    // # Indicar lo que se debe facturar ( si solo consulta o si se agregan medicamentos)
+    sacarPaciente(){
+        // # Sacar los pacientes de la lista de espera   ->   listaEspera
+        if(listaEspera.length > 0){
+            let proximoPaciente=listaEspera.shift();
+            console.log("atendiendo al paciente "+ proximoPaciente?.nombre)
+        }else{
+            console.log("ya terminamos, no hay pacientes por atender")
+        }
+    }
+    cargarInfoPaciente(propiedadAnimal:string,info:any,nombreAnimal:string){
+       // # Agregar información al objeto del paciente -> historial
+
+       //buscar al paciente, agregar la info
+       let paciente:(PacienteAnimal| undefined)=historial.find((animal)=>{animal.nombre === nombreAnimal});
+
+       if(paciente !== undefined){
+            switch (propiedadAnimal) {
+                case "nombre":
+                    paciente.nombre=info;
+                    break;
+                case "tipo":
+                    paciente.tipo=info;
+                    break;
+
+                case "raza":
+                    paciente.raza=info;
+                    break;
+
+                case "propietario":
+                    paciente.propietario=info;
+                    break;
+
+                case "ingreso":
+                    paciente.ingreso=parseInt(info);
+                    break;
+
+                case "notas":
+                    paciente.notas= paciente.notas + info;
+                    break;
+
+                case "vacunasAplicadas":
+                    paciente.vacunasAplicadas.push(info)
+                    break;
+                default:
+                    console.log("propiedad del animal no existe...")
+
+            }
+       }
+
+    }
+
+    cargarCobranza(infoCobranza:string){
+         // # Indicar lo que se debe facturar ( si solo consulta o si se agregan medicamentos)
+        cosasACobrar.push(infoCobranza)//consulta y medicamento
+    }
+    
+   
 }
+//instancia de Recepcion y Veterinaria (crear a los actores involucrados en la veterinaria)
+
+
+let sandra= new Recepcion(["Lunes","Miércoles","Viernes"],"40 años","sandraOtaz","sandraotaz@recepcion.com");
+
+let Juan= new Recepcion(["Martes","Jueves","Sabados"],"53 años","juanPerez","juanPerez@recepcion.com");
+
+
+
+let Alejandra= new Veterinaria("52 años","alejandraRuiz"," alejandraRuiz@veterinaria.com");
+
+let pacienteAIngresar={
+    nombre:"Firulais",
+    tipo:"Perro",
+    raza:"Caniche",
+    propietario:"Pepe",
+    ingreso:2023,
+    notas:"Se le dieron las vacunas correspondientes...",
+    vacunasAplicadas:["vacuna1","vacuna2"]
+}
+
+//viendo si se crearon los atributos de las instancias de la recepcion y la veterinaria
+console.log(sandra,Juan,Alejandra)
+
+//probando metodos de las instancias creadas
+sandra.ingresarLista(pacienteAIngresar);
+Juan.cargarPaciente(pacienteAIngresar);
+
+console.log(listaEspera)
+console.log(historial)
+Alejandra.sacarPaciente()
+console.log(listaEspera)
 
 //className (React - JSX) / class -> HTML atributos de HTML donde asignamos nombres a etiquetas
 //JS/TS -> class clase POO ("molde" de una entidad/actor participante de nuestro programa del cual armamos las entidades - instancias )
