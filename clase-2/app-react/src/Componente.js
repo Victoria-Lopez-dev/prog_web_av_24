@@ -2,6 +2,8 @@ import Nav from "./Nav";
 
 export default function Componente() {
 
+
+
     return (
       <div className="clase">
         <Nav/>
