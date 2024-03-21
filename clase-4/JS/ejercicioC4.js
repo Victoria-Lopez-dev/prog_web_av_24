@@ -19,15 +19,15 @@
 
 
 -Atributos Recepcion:
-    # Edad
-    # Usuario
-    # Correo
-    # DiasEnQueTrabaja
+    # Edad(string)
+    # Usuario(string)
+    # Correo(string)
+    # DiasEnQueTrabaja(array de string)
 
 -Atributos Veterinaria:
-    # Edad
-    # Usuario
-    # Correo
+    # Edad(string)
+    # Usuario(string)
+    # Correo(string)
 
 
 - propiedades de Perros o Gatos (pacientes):

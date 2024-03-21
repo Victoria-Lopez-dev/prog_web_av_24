@@ -17,16 +17,16 @@
     # Indicar lo que se debe facturar ( si solo consulta o si se agregan medicamentos)
 
 
--Atributos Recepcion:
-    # Edad
-    # Usuario
-    # Correo
-    # DiasEnQueTrabaja
+-Atributos/caracteristicas Recepcion:
+    # Edad(string)
+    # Usuario(string)
+    # Correo(string)
+    # DiasEnQueTrabaja(array de string)
 
--Atributos Veterinaria:
-    # Edad
-    # Usuario
-    # Correo
+-Atributos/caracteristicas Veterinaria:
+    # Edad(string)
+    # Usuario(string)
+    # Correo(string)
 
 
 - propiedades de Perros o Gatos (pacientes):
