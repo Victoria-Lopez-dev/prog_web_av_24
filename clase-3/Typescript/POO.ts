@@ -15,8 +15,8 @@ type Material={
 //molde
 class Recepcion{
     //atributos (caracteristicas)
-    private correo:string;
-    private nombre:string;
+    private correo:string
+    private nombre:string
     public diaLaborales:Array<string>
     //creo un constructor,para que apenas genere una instancia de la clase, la cree con informacion,con atributos
      constructor(correoR:string,nombreR:string,diasR:Array<any>){
