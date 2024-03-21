@@ -11,4 +11,6 @@ Como los browsers no interpretan TypeScript, lo que hacemos es compilar de tsc a
 
 POO viene de la sigla Programacion Orientada a Objetos y es un paradigma de programacion(conjunto de reglas y principios de programación).
 
-Se enfoca en las entidades que participan en la resolucion de los probl
+Se enfoca en las entidades que participan en la resolucion de los problemas, en los factores que interfieren y que responzabilidades tienen.Es decir, que ahora nos enfocamos no solo en las acciones a realizar ,sino que las usamos para darle capacidades a estas entidades participantes.
+
+
