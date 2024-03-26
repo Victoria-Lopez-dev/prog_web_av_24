@@ -4,6 +4,7 @@ C.R.U.D ? -> Create Reed Update Delete (acciones  a cargo de la API para modific
 DB -> base de datos| conjunto de informacion almacenada en un servidor, que nos brinda mas seguridad y estructura ,aumentando el costo del proyecto
 
 2 tipos de DB -> como almacena la informacion:
+
 //DB no relacionales 
 almacenan la informacion en colecciones ( grandes archivos de tipo JSON)
 mas descontracturadas
@@ -31,7 +32,7 @@ podemos restringir en la tabla el tipo de dato permitido
 
 JS -> strings(caracteres) numbers boolean....
 
-SQL -> CHAR - VARCHAR (caracteres -265) | INTEGER (numeros enteros), DECIMAL| BOOLEAN |TEXT
+SQL -> CHAR - VARCHAR (caracteres -265) | INTEGER (numeros enteros), DECIMAL,FLOAT| BOOLEAN |TEXT |DATE
 
 XAMPP -> entorno de desarrollo ( programa para poder levantar una DB relacional )
 Workbench MySQL-> entorno de desarrollo ( programa para poder levantar una DB relacional )
@@ -54,6 +55,11 @@ Tomcat -> crear, implementar y hospedar aplicaciones y servicios Java.
 
 - SQL
 
-- Protocolo HTTP
+- Protocolo HTTP -> conjunto de reglas
+
+verbos HTTP -> palabras que permite identificar el tipo de pedido de una "computadora" a otra.
+estados de codigo
 
 */
+
+
