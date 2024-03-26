@@ -31,7 +31,7 @@ podemos restringir en la tabla el tipo de dato permitido
 
 JS -> strings(caracteres) numbers boolean....
 
-SQL -> CHAR - VARCHAR (caracteres -265) | INTEGER (numeros enteros), DECIMAL| BOOl |TEXT
+SQL -> CHAR - VARCHAR (caracteres -265) | INTEGER (numeros enteros), DECIMAL| BOOLEAN |TEXT
 
 XAMPP -> entorno de desarrollo ( programa para poder levantar una DB relacional )
 Workbench MySQL-> entorno de desarrollo ( programa para poder levantar una DB relacional )
