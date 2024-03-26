@@ -62,4 +62,10 @@ estados de codigo
 
 */
 
+/* Proxima Clase:
 
+Intalado el XAMPP
+
+pensar info que van a guardar en la DB para su proyecto y empezar a estructurarlo 
+
+*/
