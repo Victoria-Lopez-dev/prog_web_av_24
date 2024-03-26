@@ -39,6 +39,15 @@ Workbench MySQL-> entorno de desarrollo ( programa para poder levantar una DB re
 Nosotros vamos a usar XAMPP 
 
 puedo tener por cada DB relacional varias tablas 
+
+Apache->  software multiplataforma que nos permite establecer una conexión entre un servidor y los navegadores de los visitantes del sitio web.
+
+FileZilla -> nos permite conectar con un servidor FTP( Protocolo de Transferencia de Ficheros, en ingles, File Transfer Protocol)
+
+
+Mercury -> servidor de correo totalmente independiente.,nos permite tener servicios de correo electrónico a todos los clientes de correo electrónico que cumplen con sus estándares, como Eudora o Microsoft Outlook.
+
+Tomcat -> crear, implementar y hospedar aplicaciones y servicios Java.
  */
 
 /* Despues del break:
