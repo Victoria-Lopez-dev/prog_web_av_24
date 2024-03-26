@@ -1,0 +1,16 @@
+[{
+   "id":1,
+    "producto":"remera",
+    "precio":2000,
+    "stock":39,
+    "descuento":true
+},{
+   "id":2,
+    "producto":"pantalon",
+    "stock":29
+},{
+   "id":3,
+    "producto":"campera",
+    "precio":4000,
+    "stock":59
+}]
