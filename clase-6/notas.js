@@ -59,3 +59,6 @@ DELETE -> eliminar registros
 
 //info que maneja : destinos - personal
 //crear 1 DB con 2 tablas: destinos  y personal
+
+
+//CREATE -ALTER -SELECT-INSERT-DELETE-UPDATE
