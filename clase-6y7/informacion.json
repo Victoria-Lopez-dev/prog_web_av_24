@@ -1,0 +1,36 @@
+[{
+    "nombreDocente":"docente1",
+    "apellido":"apellido1",
+    "legajo":"Doc111111"
+},{
+    "nombreDocente":"docente2",
+    "apellido":"apellido2",
+    "legajo":"Doc222222"
+},{
+    
+    "nombreDocente":"docente3",
+    "apellido":"apellido3",
+    "legajo":"Doc333332"
+},
+{
+    "nombreDocente":"docente4",
+    "apellido":"apellido4",
+    "legajo":"Doc4444444"
+},{
+    "nombre_curso":"cursoA",
+    "cantidad_alumnos":33,
+    "docente":"docente1"
+},{
+    "nombre_curso":"cursoB",
+    "cantidad_alumnos":21,
+    "docente":"docente2"
+},{
+    "nombre_curso":"cursoC",
+    "cantidad_alumnos":44,
+    "docente":"docente2"
+},{
+    "nombre_curso":"cursoD",
+    "cantidad_alumnos":56,
+    "docente":"docente3"
+}]
+
