@@ -1,0 +1,21 @@
+[{
+
+  "nombre": "Juan Perez",
+  "edad": 20,
+  "tipo": "alumno",
+  "regular": true
+},
+{
+
+  "nombre": "Marta Gomez",
+  "edad": 40,
+  "tipo": "alumno",
+  "regular": false
+},{
+
+  "nombre": "Martin Ruiz",
+  "edad": 50,
+  "regular": true
+}]
+
+
