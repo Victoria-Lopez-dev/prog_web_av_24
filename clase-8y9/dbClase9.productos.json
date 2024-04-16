@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "661e7b419256e5a7f56214b7"
+  },
+  "producto": "papas fritas",
+  "categoria": "snack",
+  "stock": 100,
+  "precio": 6535
+},
+{
+  "_id": {
+    "$oid": "661e7b419256e5a7f56214b8"
+  },
+  "producto": "hamburguesa cajax40",
+  "categoria": "carnes",
+  "stock": 405,
+  "precio": 13000
+},
+{
+  "_id": {
+    "$oid": "661e8393dc885cf03a3568e5"
+  },
+  "producto": "mani salado",
+  "categoria": "snack",
+  "stock": 200,
+  "precio": 1980
+},
+{
+  "_id": {
+    "$oid": "661e83f2dc885cf03a3568e7"
+  },
+  "producto": "hamburguesa cajax40",
+  "categoria": "carnes",
+  "stock": 405,
+  "precio": 13000
+}]

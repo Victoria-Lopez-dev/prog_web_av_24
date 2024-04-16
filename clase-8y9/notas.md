@@ -1,14 +1,19 @@
 ## base de datos
 sistema de almacenamiento de informacion, las clasificamos segun la manera de tener la informacion organizada.
+crear informacion
+editar informacion
+leer informacion
+eliminar informacion
+CRUD
 
 # relacionales
 - Se escribian en lenguaje SQL - estructuradas en forma de tablas
 - Todos sus campos tienen que estar completos
 - Nuevos conceptos: campos - registros
+- MySQL - MariaDB
 
-
-# No relacionales 
-- Almacenan la informacion en colecciones 
+# No relacionales no SQL
+- Almacenan la informacion en colecciones ("archivos como JSON - archivos de texto")
 - Tambien llamada NoSQL
 - Documento que va a ser como un gran array de objetos, objeto de objetos (como un JSON)
 no son tan "rigidas" como las relacionales.
@@ -38,9 +43,11 @@ nos paramos sobre una base de datos para poder realizar acciones sobre esta o cr
 
 
 
-## acciones dentro de colecciones 
+## acciones dentro de colecciones :
 
-# leer - buscar
+# "CRUD"  find() | findOne() |findMany() - insertOne()| insertMany() - updateOne() |updateMany() - deleteOne() | deleteMany()
+
+# leer - buscar 
 
 db.coleccion.find() -> trae todos los documentos de la coleccion
  db.coleccion.findOne({filtro}) -> trae el primer documento que cumple con la condicion indicada en el filtro
@@ -83,4 +90,37 @@ Nos devuelve la ejecucion del comando tanto si lo pudo crear como sus ObjectId c
 
 
 
+# eliminar uno o varios documento/s
 
+una vez eliminado el documento, no existe control+Z .
+
+db.nombreColeccion.deleteOne({filtro});
+db.nombreColeccion.deleteMany({filtro});
+
+# actualizar una o varias propiedades del documentos
+podemos eliminar una propiedad,actualizar o agregar una propiedad -> etapas de agregacion o aggregation statements
+
+$set -> agregar o modificar un item/propiedad de un documento
+$unset -> eliminar un item/propiedad
+
+db.nombreColeccion.updateOne({filtro},{actualizacion});
+db.nombreColeccion.updateMany({filtro},{actualizacion});
+
+## actualizacion:
+
+$set:{propiedad:valor,propiedad:valor}
+
+$unset:["propiedad","propiedad"]
+
+## Ejemplo
+
+db.nombreColeccion.updateOne({filtro},{$set:{propiedad:valor,propiedad:valor}});
+
+db.nombreColeccion.updateOne({filtro},{$unset:{propiedad:valor}});
+db.nombreColeccion.updateOne({filtro},[{$unset:["nombrePropiedad","nombrePropiedad"]}]);
+
+
+
+Proxima clase : ejercitacion de MongoDB - si llegamos mini ejercicio SQL 
+
+Semana proxima : intro a API y repaso de NodeJS.
