@@ -45,7 +45,11 @@ nos paramos sobre una base de datos para poder realizar acciones sobre esta o cr
 
 ## acciones dentro de colecciones :
 
-# "CRUD"  find() | findOne() |findMany() - insertOne()| insertMany() - updateOne() |updateMany() - deleteOne() | deleteMany()
+# "CRUD" 
+# find() | findOne() |findMany() - 
+# insertOne()| insertMany() - 
+# updateOne() |updateMany() - 
+# deleteOne() | deleteMany()
 
 # leer - buscar 
 
