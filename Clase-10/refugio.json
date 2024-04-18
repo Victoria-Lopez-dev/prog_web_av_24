@@ -1,0 +1,30 @@
+[{
+
+  "animal": "Pepito",
+  "edad": 10,
+  "tipo": "perro",
+  "vacunasAplicadas": true
+},
+{
+"animal": "Firulais",
+  "edad": 4,
+  "tipo": "perro",
+  "vacunasAplicadas": false
+},
+
+{
+
+  "animal": "Tweety",
+  "edad": 2,
+  "tipo": "ave",
+  "vacunasAplicadas": true
+},
+{
+  "animal": "Dama",
+  "edad": 12,
+  "tipo": "gato",
+  "vacunasAplicadas": false
+}]
+
+
+

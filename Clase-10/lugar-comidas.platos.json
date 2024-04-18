@@ -1,0 +1,49 @@
+[{
+
+  "nombrePlato": "ensalada_cesar",
+  "precio": 2000,
+  "stock": 18,
+  "categoria": "ensaladas"
+},
+{
+"nombrePlato": "ensalada mixta",
+  "precio": 2000,
+  "stock": 20,
+  "categoria": "ensaladas"
+},
+
+{
+
+  "nombrePlato": "hamburguesa completa",
+  "precio": 3500,
+  "stock": 15,
+  "categoria": "hamburguesas"
+},
+{
+  "nombrePlato": "pizza napolitana",
+  "precio": 5100,
+  "stock": 23,
+  "categoria": "pizzas"
+},
+{
+
+  "nombrePlato": "empanada de carne",
+  "precio": 350,
+  "stock": 100,
+  "categoria": "empanadas"
+},
+{
+
+  "nombrePlato": "pizza cebolla",
+  "precio": 8250,
+  "stock": 5,
+  "categoria": "pizzas"
+},
+{
+  "nombrePlato": "pizza napolitana",
+  "precio": 7720,
+  "stock": 5,
+  "categoria": "pizzas"
+}]
+
+
