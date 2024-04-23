@@ -1,7 +1,10 @@
 //podemos crear nuestros modulos 
 
 const saludo=(nombre)=>{
-    console.log("Hola "+ nombre)
+    console.log("Hola "+ nombre);
+ 
 }
-
-module.exports={saludo}// al exportarlos podemos utilizarlos en otros documentos 
+const mensaje=()=>{
+    console.log("dejando un mensaje...")
+}
+module.exports={saludo,mensaje}// al exportarlos podemos utilizarlos en otros documentos 
