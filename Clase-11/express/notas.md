@@ -22,7 +22,7 @@ request - response (peticion/pedido - respuesta)
 
 peticion (realizada por el cliente) -> 
 head y body -> donde se detalle que necesita el cliente/front y se adjunta la informacion que necesita
-head -> el usuario puede observar la info que se manda
+head -> el usuario puede observar la info que se manda ("URL" - direccion)
 body -> el usuario no ve la info enviada.
 verbos HTTP(HTTP verbs) -> "identificadores" que definen que tipo de accion necesita el cliente que haga el servidor.
 Se colocan en el Head de la peticion
@@ -46,6 +46,7 @@ POST -> peticion de creacion
 para la proxima clase repaso de express y hacemos cosas y respondemos a peticiones GET y POST
 
 
-PATCH->
-PUT->
-DELETE->
+PUT-> peticion que nos permite modificar datos existentes completos
+PATCH-> peticion que nos permite modificar datos existentes parciales
+DELETE-> peticion elimina 
+-> contiene head y body

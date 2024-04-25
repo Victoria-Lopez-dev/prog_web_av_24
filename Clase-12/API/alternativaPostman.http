@@ -1,0 +1,5 @@
+// extension Rest Client
+//crear un archivo con extension http
+// verbHTTP peticion
+
+GET http://localhost:4000/api/ensalada/mixta
