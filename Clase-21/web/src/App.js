@@ -31,7 +31,7 @@ function App() {
     })
     .then((resp)=> {return resp.json()})
     .then((data)=> {
-      data.message==="info recibida"? setMensaje(true):setMensaje(false);
+      data.message ==="info recibida"? setMensaje(true):setMensaje(false);
     setTimeout(()=>{setMensaje(false)},3000)
   })
     .catch(err=> console.log("no se logro enviar la info: "+ err)
@@ -54,7 +54,7 @@ function App() {
 {        // <form action='http://localhost:4000/' method='POST' className='mx-5' >
   //esto nos muestra la respuesta de la API tal cual se envia
 }
-{  mensaje ==false?  <form className='mx-5' onSubmit={(event)=>handlerForm(event)}>
+{  mensaje === false?  <form className='mx-5' onSubmit={(event)=>handlerForm(event)}>
       <label className='form-label' htmlFor='nombre'>nombre</label>
         <input type='text' name='nombre' id="nombre" className='form-control col-md-6'/>
 
