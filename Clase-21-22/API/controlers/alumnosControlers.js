@@ -73,8 +73,4 @@ const verificacionEncrip= async(req,res)=>{
 export {mensajeOk,respuestaB,respuestaPost,respuestaC,buscarAlumno, encriptandoData,verificacionEncrip}
 
 
-async function getById(req,res){
-    let idHab=req.params.id;
-    let [respuesta]= await db.query("select * from habitaciones where id=?",[idHab])
-}
 
