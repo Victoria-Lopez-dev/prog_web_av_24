@@ -1,6 +1,6 @@
  import {hash,compare} from "bcrypt";
 import {db} from "../config/db.js"
-
+let infoEnc="";
  const mensajeOk=(req,res)=>{
     //hacemos todo el proceso 
     res.status(200).json({message:"ok",data:"Una oracion traida desde la API"})
@@ -37,17 +37,18 @@ const buscarAlumno=(req,res)=>{
 const encriptandoData=async(req,res)=>{
     //obtenemos info de la request
     let {info,data}=req.body;
-
+ 
     //encriptamos por medio de bcrypt dicha info
-    let dataEnc=await hash(info,10)
+   infoEnc=await hash(info,10)
 
-    db.query("INSERT INTO `datos`(`info`, `nombre`) VALUES (?,?)",[dataEnc,data],(err,data)=>{
-        if(data){
-            res.json({message:'info ingresada ok'})
-        }else{
-            res.json({message:'error:'+err})
-        }
-    });
+   res.send("ok")
+    // db.query("INSERT INTO `datos`(`info`, `nombre`) VALUES (?,?)",[infoEnc,data],(err,data)=>{
+    //     if(data){
+    //         res.json({message:'info ingresada ok'})
+    //     }else{
+    //         res.json({message:'error:'+err})
+    //     }
+    // });
 
 
 
