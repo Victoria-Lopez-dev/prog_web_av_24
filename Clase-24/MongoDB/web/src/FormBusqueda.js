@@ -2,7 +2,7 @@ export default function FormBusqueda() {
 
     const handlerSearch=(event)=>{
         event.preventDefault();//manipular el envio 
-        fetch("http://localhost:4200/buscar/"+event.target[0].value)
+        fetch("http://localhost:4000/buscar/"+event.target[0].value)
         .then((resp)=>{return resp.json()})
         .then((info)=>{console.log(info.data)})
         .catch(err=>console.log(err))
