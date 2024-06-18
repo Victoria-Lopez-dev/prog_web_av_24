@@ -1,4 +1,4 @@
-//import db from '../config/db.js';
+import db from '../config/db.js';
 
  const buscarATodos=(res)=>{
     db.query("SELECT * FROM alumnos",(err,data)=>{

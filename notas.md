@@ -9,9 +9,10 @@
 # Clase 24 - 18/06
 - deploy front - api -db 
 - dudas y consultas sobre el proyecto.
-(prometo leer sobre lens)
+
 
 # Clase 25 - 20/6 (feriado) - se pasa para el 25/6
 - dudas y consultas sobre el proyecto + cierre de cursada.
 
 # Entrega de TP final : 27/06
+

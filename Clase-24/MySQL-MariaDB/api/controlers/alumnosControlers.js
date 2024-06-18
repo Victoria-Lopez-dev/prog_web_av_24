@@ -1,5 +1,7 @@
 import {buscarATodos,buscarATodos2,cargaDeAlumno,cargaDeAlumnoPass} from "../utils/utils.js"
 import {hash} from 'bcrypt';
+import db from '../config/db.js';
+
  const buscarAlumno=async(req,res)=>{
     //hacemos todo el proceso 
     //SQL -> "SELECT * FROM `alumnos`" paquete mysql2 -> metodo query
@@ -8,28 +10,28 @@ import {hash} from 'bcrypt';
     //si la descontracturo creandola en un archivo aparte buscarATodos(res)
     //o lo escribo directamente en la funcion
     
-    // db.query("SELECT * FROM alumns",(err,data)=>{
-    //     if(err){
-    //         console.log(err.sqlMessage)
-    //         res.status(500).json({mensaje:"Error interno, no se logro ubicar la informacion"})
-    //     }else{
-    //         console.log(data)//info recibida de la DB en forma de lista
-    //           res.status(200).json({mensaje:"alumno encontrado","info":data})
-    //     }
-    // });
+    db.query("SELECT * FROM alumnos",(err,data)=>{
+        if(err){
+            console.log(err.sqlMessage)
+            res.status(500).json({mensaje:"Error interno, no se logro ubicar la informacion"})
+        }else{
+            console.log(data)//info recibida de la DB en forma de lista
+              res.status(200).json({mensaje:"alumno encontrado","info":data})
+        }
+    });
 
     //otra manera
     //const [data, _info] = await db.query("comandoSQL a enviar")
     
-   const info=await buscarATodos2()
+//    const info=await buscarATodos2()
 
-   if(info === null){
-    res.status(200).json({mensaje:"no hay alumno con dicho dato"})
+//    if(info === null){
+//     res.status(200).json({mensaje:"no hay alumno con dicho dato"})
 
-   }else{
-    res.status(500).json({mensaje:"Error interno, no se logro ubicar la informacion"})
+//    }else{
+//     res.status(500).json({mensaje:"Error interno, no se logro ubicar la informacion"})
 
-   }
+//    }
 
 };
 
