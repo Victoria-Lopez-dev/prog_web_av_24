@@ -3,7 +3,7 @@
 # Clase 23 - 13/6
 - respuesta sobre consultas de certificados(como figuran en caso de no aprobar uno de los dos, o si solo hicieron uno de ellos) (LISTO!)
 - coneccion DB SQL y Mongo (LISTO)
-- JWT - token (muy utilizado en sesiones)
+
 
 
 # Clase 24 - 18/06
