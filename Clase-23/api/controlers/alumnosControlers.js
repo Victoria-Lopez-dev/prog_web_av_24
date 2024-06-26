@@ -36,6 +36,7 @@ import {hash} from 'bcrypt';
 const cargarAlumno=(req,res)=>{
 
     cargaDeAlumno(req.body,res)
+    console.log(req.body)
 }
 
 

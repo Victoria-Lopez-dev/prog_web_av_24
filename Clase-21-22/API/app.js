@@ -23,8 +23,9 @@ app.use(cors());//cruze de dominios
 app.use(express.json());//permitir interpretar json
 
 app.use(express.urlencoded({extended:true}));//nos permite recibir informacion de un formulario en formato objeto
+app.use('/imagen',express.static('/images'));//poder hacer una peticion y obtener la imagen
 
-app.use("",router)
+app.use("/user",router)
 
 app.listen(port,(err)=>{
     if(err){
